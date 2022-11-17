@@ -1,39 +1,27 @@
-# Gogogolocal
+# AngularVersion
 
-## Descripcion del proyecto
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
 
-Gogogolocal es un negocio de ventas de mangas, comics, y otros productos relacionados. El sistema web desarrollado en este proyecto, tiene como fin permitir no solo todas las funcionalidades de un e-commerce, sino también brindar otras funcionalidades a los dueños de la página, como puede ser el manejo del stock de los productos.
+## Development server
 
-## Usuarios del sistema
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-El sistema contará con dos tipos de usuarios:
+## Code scaffolding
 
-- Invitado
-- Administrador
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-**Diagrama de casos de uso**
+## Build
 
-![imagen](https://user-images.githubusercontent.com/45775681/201704882-96255958-cab3-4c50-b47f-1d8854a93fe9.png)
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-### Invitado
+## Running unit tests
 
-El usuario invitado es el rol por defecto que se le asigna a la persona no autenticada que ingresa a la página. Deberá poder ver el catálogo de productos, y gestionar un pedido al negocio.
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-### Administrador
+## Running end-to-end tests
 
-Rol asignado a los dueños de la página. Deberán poder gestionar el stock actual, pudiendo actualizar de esta manera los precios de cada uno de los productos de la página
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Entidades
+## Further help
 
-### Producto
-
-### Tipo producto
-
-### Volumen
-
-### Editorial
-
-### Genero
-
-### Usuario
-
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
