@@ -1,0 +1,57 @@
+<body>
+
+    <div id="container" style="overflow: auto">
+
+        <div class="header">
+            <img src="/assets/gogogo manga y comics store - logo sin fondo.png" height="100px">   
+        </div>
+    
+        <div class="MainWrapper">
+            
+            <div class="ui-widget">
+                <input id="tags" placeholder="Buscador">
+                <button id="searchButton" class="btn btn-black">Buscar</button>
+                <button id="clearFilterButton" class="btn btn-black">Limpiar</button>
+            </div>
+  
+            <div id="catalogUbication">
+                <table id="catalogTable" class="table">
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Volumen</th>
+                            <th>Descripcion</th>
+                            <th>Precio</th>
+                            <th>Portada</th>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                    </tbody>
+ 
+                    <tfoot>
+                        <tr>
+                            <th colspan="5">
+                                <button id="previousPageButton" class="btn btn-black">Anterior</button>
+                                <button id="nextPageButton" class="btn btn-black">Siguiente</button>
+                                <br><span id="pageNumber"></span>
+                            </th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+ 
+    <div class="footer">
+       <p id="loadStatus"></p>
+    </div>
+
+</body>
