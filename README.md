@@ -36,4 +36,3 @@ Rol asignado a los dueños de la página. Deberán poder gestionar el stock actu
 ### Genero
 
 ### Usuario
-
