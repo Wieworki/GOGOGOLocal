@@ -4,8 +4,13 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 125px 3vw 25px 3vw;
+    padding: 100px 3vw 25px 3vw;
     min-height: 100vh;
+}
+
+@media (min-width: 422px){
+    body {padding-top: 75px;
+    } 
 }
 
 #container {
@@ -14,56 +19,37 @@ body {
     outline: 9px double #4C90BE;
     border-radius: 8px;
     backdrop-filter: blur(4px);
-}
-
-.top-buttons {
-    display: inline;
-}
-
-@media (max-width: 475px){
-    .top-buttons {display: block;
-    } 
-}
-
-.header {
-    text-align: center;
-    margin-top: 1.5vh;
-}
-
-img {
-    max-width: 50%;
-    height: auto;
-}
-
-@media (max-width: 520px){
-    img {max-width: 75%;
-    } 
+    margin: 2.5vh 0;
 }
 
 .portada {
-    max-width:30vw;
-    max-height:60vh;
+    max-width: 75vw;
+    max-height: 50vh;
 }
 
-table{
-    background-color: rgba(19,141,117,.5);
-    margin-bottom: 0;
+@media (min-width: 576px){
+    .portada {
+        max-width:100%;
+        max-height:50vw;
+        height: 400px;
+        width: 350px;
+        min-height: 200px;
+        min-width: 175px;
+    }
 }
-
 thead th {
     padding: 0;
+    text-align: center;
 }
 
-tr {
-    border-left: 2px solid #45b39d ;
-    border-right: 2px solid #45b39d;
+tbody {
+    background-color: rgba(19,141,117,.5);
 }
 
-tr {
+tbody tr {
     color: white;
     text-align: center; 
-    border-bottom: 2px solid #45b39d; 
-    border-top: 2px solid #45B39D;
+    border: 2px solid #45b39d;
     font-size: 1.2em;
 }
 
@@ -71,74 +57,13 @@ table tbody tr:nth-of-type(even) {
     background-color: rgba(23, 165, 137, 0.4);
 }
 
-.row {
+/*.row {
     margin: 0;
 }
-
+*/
 .row > * {
-    padding: 0.5rem 0;
-}
-
-.ui-widget {
-    font-size: 1.2em;
-    text-align: center;
-}
-
-.ui-widget input {
-    position: relative;
-    top: 2.5px;
-    background-color: #F5EEF8;
-    font-size: 1.15em;
-    outline: none;
-    border-radius: 6.5px;
-    text-indent: 10px;
-}
-
-.ui-widget ::placeholder {
-    background-image: url("/assets/1200px-Search_Noun_project_15028.png");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: 30px;
-}
-
-.btn {
-    background-color: #5A348C;
-    border-color: #47296D;
-    color: white;
-}
-
-.btn:hover {
-    background-color: #47296D;
-    border-color: #5A348C;
-}
-
-#searchButton, #clearFilterButton {
-    font-size: .9em;
-    margin: 1.75vh .3vw;
-}
-
-#previousPageButton, #nextPageButton {
-    margin: 1.75vh .7vw;
-    font-size: 1.3em;
-}
-
-#top {
-    font-size: 0.9em;
-    margin: 1.75vh .3vw;
-    padding: 0.2rem 0.8rem;
-
-}
-
-#pageNumber {
-    font-size: 1.4em;
-    color: #F5EEF8;
-}
-
-#loadStatus {
-    text-align: center;
-    font-size: 1.2em;
-    margin-top: 2vh;
-    color: white;
+    padding-left: 0%;
+    padding-right: 0%;
 }
 
 ::-webkit-scrollbar {

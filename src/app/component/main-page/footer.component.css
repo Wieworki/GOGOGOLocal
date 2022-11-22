@@ -1,0 +1,39 @@
+.btn {
+    background-color: #5A348C;
+    border-color: #47296D;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #47296D;
+    border-color: #5A348C;
+}
+
+#previousPageButton, #nextPageButton {
+    margin: 1.75vh .7vw;
+    font-size: 1.3em;
+}
+
+#pageNumber {
+    font-size: 1.4em;
+    color: #F5EEF8;
+}
+
+#loadStatus {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 2vh;
+    color: white;
+}
+
+#top {
+    font-size: 0.9em;
+    margin: 1.75vh .3vw;
+    padding: 0.2rem 0.8rem;
+
+}
+
+.row > * {
+    padding-left: 0%;
+    padding-right: 0%;
+}
