@@ -1,57 +1,107 @@
 <body>
-
+    
     <div id="container" style="overflow: auto">
 
         <div class="header">
-            <img src="/assets/gogogo manga y comics store - logo sin fondo.png" height="100px">   
+            <img src="/assets/gogogo manga y comics store - logo sin fondo.png">   
         </div>
     
-        <div class="MainWrapper">
+        <div class="row">
             
-            <div class="ui-widget">
+            <div class="ui-widget col">
                 <input id="tags" placeholder="Buscador">
-                <button id="searchButton" class="btn btn-black">Buscar</button>
-                <button id="clearFilterButton" class="btn btn-black">Limpiar</button>
+                <div class="top-buttons">
+                    <button id="searchButton" class="btn btn-black">Buscar</button>
+                    <button id="clearFilterButton" class="btn btn-black">Limpiar</button>
+                </div>
             </div>
-  
-            <div id="catalogUbication">
+
+        </div>
+
+        <div class="row row-cols-3">
+
+            <div class="col">
+
                 <table id="catalogTable" class="table">
                     <thead>
                         <tr>
-                            <th>Título</th>
-                            <th>Volumen</th>
-                            <th>Descripcion</th>
-                            <th>Precio</th>
-                            <th>Portada</th>
+                            <th><img class="portada" src="/assets/GOGOGO Manga y comics store.jpg" alt="prueba"></th> <!-- aca irian las imagenes de portadas-->
                         </tr>
                     </thead>
     
                     <tbody>
-                        <tr></tr>
-                        <tr></tr>
-                        <tr></tr>
-                        <tr></tr>
-                        <tr></tr>
+                        <tr>
+                            <th>Titulo - Volumen</th>
+                        </tr>
+                        <tr> 
+                            <th>Precio: $000</th>
+                        </tr>
                     </tbody>
  
-                    <tfoot>
-                        <tr>
-                            <th colspan="5">
-                                <button id="previousPageButton" class="btn btn-black">Anterior</button>
-                                <button id="nextPageButton" class="btn btn-black">Siguiente</button>
-                                <br><span id="pageNumber"></span>
-                            </th>
-                        </tr>
-                    </tfoot>
                 </table>
+
+            </div>
+
+            <div class="col">
+
+                <table id="catalogTable" class="table">
+                    <thead>
+                        <tr>
+                            <th><img class="portada" src="/assets/GOGOGO Manga y comics store.jpg" alt="prueba"></th> <!-- aca irian las imagenes de portadas-->
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr>
+                            <th>Titulo - Volumen</th>
+                        </tr>
+                        <tr> 
+                            <th>Precio: $000</th>
+                        </tr>
+                    </tbody>
+ 
+                </table>
+
+            </div>
+
+            <div class="col">
+
+                <table id="catalogTable" class="table">
+                    <thead>
+                        <tr>
+                            <th><img class="portada" src="/assets/GOGOGO Manga y comics store.jpg" alt="prueba"></th> <!-- aca irian las imagenes de portadas-->
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr>
+                            <th>Titulo - Volumen</th>
+                        </tr>
+                        <tr> 
+                            <th>Precio: $000</th>
+                        </tr>
+                    </tbody>
+ 
+                </table>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-1"></div>
+            <div class="text-center col">
+                <button id="previousPageButton" class="btn btn-black">Anterior</button>
+                <button id="nextPageButton" class="btn btn-black">Siguiente</button>
+                <br><span id="pageNumber"></span>
+            </div>
+            <div class="col-1 text-center">
+                <a id="top" class="btn btn-black" href="#" role="button">↑</a>
             </div>
 
         </div>
 
     </div>
  
-    <div class="footer">
-       <p id="loadStatus"></p>
-    </div>
-
 </body>
