@@ -11,7 +11,7 @@
 
 #previousPageButton, #nextPageButton {
     margin: 1.75vh .7vw;
-    font-size: 1.3em;
+    font-size: 1.3rem;
 }
 
 #pageNumber {
@@ -21,13 +21,13 @@
 
 #loadStatus {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin-top: 2vh;
     color: white;
 }
 
 #top {
-    font-size: 0.9em;
+    font-size: 0.9rem;
     margin: 1.75vh .3vw;
     padding: 0.2rem 0.8rem;
 
