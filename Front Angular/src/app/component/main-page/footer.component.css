@@ -1,39 +1,50 @@
-.btn {
-    background-color: #5A348C;
-    border-color: #47296D;
-    color: white;
+.row {
+    padding: 20px 30px 20px 30px;
 }
 
-.btn:hover {
-    background-color: #47296D;
-    border-color: #5A348C;
-}
-
-#previousPageButton, #nextPageButton {
-    margin: 1.75vh .7vw;
-    font-size: 1.3rem;
-}
-
-#pageNumber {
-    font-size: 1.4em;
+.text {
     color: #F5EEF8;
 }
 
-#loadStatus {
-    text-align: center;
-    font-size: 1.2rem;
-    margin-top: 2vh;
-    color: white;
+p, h5 {
+    margin-bottom: 0.5rem;
 }
 
-#top {
-    font-size: 0.9rem;
-    margin: 1.75vh .3vw;
-    padding: 0.2rem 0.8rem;
-
-}
-
-.row > * {
+.row>* {
     padding-left: 0%;
     padding-right: 0%;
+}
+
+a {
+    background-color: #2ee152;
+    border: 1px solid #45b373;
+    color: #5A348C;
+    padding: 4px 9px;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+button {
+    background-color: #2ee152;
+    border: 1px solid #45b373;
+    color: #5A348C;
+    padding: 3.5px 10px;
+    border-radius: 0 5px 5px 0;
+    font-size: 1.15rem;
+}
+
+a:hover, button:hover {
+    background-color: #45b373;
+    border-color: #2ee152;
+    color: #9c59f4;
+}
+
+input {
+    position: relative;
+    top: 4px;
+    background-color: #F5EEF8;
+    font-size: 1.3rem;
+    outline: none;
+    text-indent: 10px;
 }

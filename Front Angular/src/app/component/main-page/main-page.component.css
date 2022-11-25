@@ -4,12 +4,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 2.5vw 25px 2.5vw;
+    padding: 75px 25px 15px 25px;
     min-height: 100vh;
 }
 
-@media (min-width: 422px){
-    body {padding: 75px 25px 25px 25px;
+@media (max-width: 422px){
+    body {padding-top: 100px;
     } 
 }
 
@@ -19,7 +19,7 @@ body {
     outline: 9px double #4C90BE;
     border-radius: 8px;
     backdrop-filter: blur(4px);
-    margin: 2.5vh 0;
+    margin: 25px 0;
 }
 
 .portada {
@@ -36,7 +36,7 @@ tbody {
 }
 
 tbody tr {
-    color: white;
+    color: #F5EEF8;
     text-align: center; 
     border: 2px solid #45b39d;
     font-size: 1.2rem;
@@ -50,35 +50,59 @@ table tbody tr:nth-of-type(even) {
     display: none;
 }
 
-/*Autocomplete*/
-
-    /* IE 6 doesn't support max-height
-    we use height instead, but this forces the menu to always be this tall */
-
-.ui-autocomplete {
-    max-height: 40vh;
-    overflow-y: auto;
-    overflow-x: hidden;
+span {
+    color: #F5EEF8;
 }
 
-html .ui-autocomplete {    
-    background-color: #F5EEF8;
-    border-color: #180748;
-    list-style: none;
-    text-indent: 10px;
-    text-align: left;
-    padding: 0;
+.top {
+    font-size: 1.2rem;
+    margin: 1.75vh .3vw;
+    padding: 0.2rem 0.8rem;
+    position: fixed;
+    right: 25px;
+    bottom: -75px;
+    transition: all .2s ease-in-out;
 }
 
-.ui-menu-item .ui-menu-item-wrapper.ui-state-active {
-    background-color: #E8DEEB !important;
-    font-weight: bold !important;
-    color: #212F3D !important;
+.showTop {
+    bottom: -4px;
+    transition: all .2s ease-in-out;
 }
 
-    /* there is a div with the next class name appearing in the bottom of the page when the Autocomplete function is "activated" 
-    so I apply this hidden propiety for it to not shows in screen */
+.btn {
+    background-color: #5A348C;
+    border-color: #47296D;
+    color: white;
+}
 
-.ui-helper-hidden-accessible {
-    visibility: hidden;         
+.btn:hover {
+    background-color: #47296D;
+    border-color: #5A348C;
+}
+
+#previousPageButton,
+#nextPageButton {
+    margin: 1.75vh .7vw;
+    font-size: 1.3rem;
+}
+
+#pageNumber {
+    font-size: 1.4em;
+    color: #F5EEF8;
+}
+
+#loadStatus {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2vh;
+    color: #F5EEF8;
+}
+
+.end {
+    background-color: rgba(0,0,0,.7);
+    outline: 3px solid #4C90BE;
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    margin: 25px 0 0 0;
+    padding: 5px 0;
 }

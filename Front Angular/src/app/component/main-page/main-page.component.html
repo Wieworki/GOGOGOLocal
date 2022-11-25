@@ -1,5 +1,5 @@
 <body>
-    
+   
     <div id="container" style="overflow: auto">
 
         <app-header></app-header>
@@ -100,8 +100,32 @@
 
     <div id="container" style="overflow: auto">
 
+        <div class="row">
+
+            <div class="col text-center ">
+                <button id="previousPageButton" class="btn btn-black">Anterior</button>
+                <button id="nextPageButton" class="btn btn-black">Siguiente</button>
+                <br><span id="pageNumber"></span>
+            </div>
+        
+        </div>
+    
+    </div>
+
+    <div id="container" style="overflow: auto">
+
         <app-footer></app-footer>
 
     </div>
- 
+    
+    <div class="row end">
+        <div class="col text-center">
+            <span>COPYRIGHT © GOGOGO MANGA - 2022. TODOS LOS DERECHOS RESERVADOS.</span>
+        </div>
+    </div>
+
+    <div class="col-1 text-end top" [ngClass]="{'showTop': windowScrolled}">
+        <a class="btn btn-black" href="#" role="button"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
 </body>
