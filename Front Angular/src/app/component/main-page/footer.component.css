@@ -1,5 +1,5 @@
 .row {
-    padding: 20px 30px 20px 30px;
+    padding: 20px calc(10px + 5vw);
 }
 
 .text {

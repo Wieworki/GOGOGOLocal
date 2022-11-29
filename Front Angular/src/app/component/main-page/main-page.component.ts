@@ -13,10 +13,10 @@ export class MainPageComponent implements OnInit {
 
   @HostListener("window:scroll", [])
   onWindowScroll() {
-      if (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop > 100) {
+      if (window.pageYOffset > 450 && document.documentElement.scrollTop) {
           this.windowScrolled = true;
       } 
-     else if (this.windowScrolled && window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop < 10) {
+     else if (this.windowScrolled && window.pageYOffset < 200 && document.documentElement.scrollTop) {
           this.windowScrolled = false;
       }
   }

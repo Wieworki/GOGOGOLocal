@@ -6,14 +6,14 @@ nav {
    margin-left: 20px;
  }
 
-.top-buttons {
+#searchButton {
    display: inline;
 }
 
  .ui-widget {
    font-size: 1.2rem;
    margin-left: 20px;
-   padding-top: 5px;
+   padding-top: 0px;
 }
 
 .ui-widget input {
@@ -84,3 +84,14 @@ nav {
  .dropdown-item:focus {
     color: #603896;
  }
+ 
+ @media (max-width: 768px){
+   .dropdown {
+      padding-top: 5px;
+      text-align: end;
+   } 
+   .ui-widget {
+      padding-top: 0;
+      text-align: end;
+   }
+}

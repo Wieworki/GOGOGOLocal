@@ -10,7 +10,13 @@
 }
 
 img {
-    max-height: 60vh;
+    width: 90%;
+    height: 28vw;
+    object-fit: cover;
+}
+
+.slide {
+    margin-bottom: 5%;
 }
 
 .logo {

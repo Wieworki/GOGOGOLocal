@@ -8,7 +8,7 @@ body {
     min-height: 100vh;
 }
 
-@media (max-width: 422px){
+@media (max-width: 311px){
     body {padding-top: 100px;
     } 
 }
