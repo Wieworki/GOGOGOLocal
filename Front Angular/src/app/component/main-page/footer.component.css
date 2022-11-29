@@ -1,0 +1,59 @@
+.row {
+    padding: 20px calc(10px + 5vw);
+}
+
+.text {
+    color: #F5EEF8;
+}
+
+p {
+    margin-bottom: 0.5rem;
+}
+
+h6 {
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+
+.row>* {
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+a {
+    background-color: #2ee152;
+    border: 1px solid #45b373;
+    color: #5A348C;
+    padding: 4px 9px;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+button {
+    background-color: #2ee152;
+    border: 1px solid #45b373;
+    color: #5A348C;
+    padding: 3.5px 10px;
+    border-radius: 0 5px 5px 0;
+    font-size: 1.15rem;
+}
+
+a:hover, button:hover {
+    background-color: #45b373;
+    border-color: #2ee152;
+    color: #9c59f4;
+}
+
+input {
+    position: relative;
+    top: 4px;
+    background-color: #F5EEF8;
+    font-size: 1.3rem;
+    outline: none;
+    text-indent: 10px;
+}
+
+.redes {
+    display: inline-block;
+}

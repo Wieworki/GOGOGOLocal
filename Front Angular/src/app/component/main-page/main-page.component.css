@@ -1,0 +1,108 @@
+body {
+    background-image: url("/assets/Gogogo feed completo.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 65px 25px 15px 25px;
+    min-height: 100vh;
+}
+
+@media (max-width: 311px){
+    body {padding-top: 100px;
+    } 
+}
+
+#container {
+    box-shadow: 0px 0px 40px rgba(0,0,0,1);
+    background-color: rgba(0,0,0,.7);
+    outline: 9px double #4C90BE;
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    margin: 25px 0;
+}
+
+.portada {
+    max-width: 100%;
+}
+
+thead th {
+    padding: 0;
+    text-align: center;
+}
+
+tbody {
+    background-color: rgba(19,141,117,.5);
+}
+
+tbody tr {
+    color: #F5EEF8;
+    text-align: center; 
+    border: 2px solid #45b39d;
+    font-size: 1.2rem;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: rgba(23, 165, 137, 0.4);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+span {
+    color: #F5EEF8;
+}
+
+.top {
+    font-size: 1.2rem;
+    margin: 1.75vh .3vw;
+    padding: 0.2rem 0.8rem;
+    position: fixed;
+    right: 25px;
+    bottom: -75px;
+    transition: all .2s ease-in-out;
+}
+
+.showTop {
+    bottom: -4px;
+    transition: all .2s ease-in-out;
+}
+
+.btn {
+    background-color: #5A348C;
+    border-color: #47296D;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #47296D;
+    border-color: #5A348C;
+}
+
+#previousPageButton,
+#nextPageButton {
+    margin: 1.75vh .7vw;
+    font-size: 1.3rem;
+}
+
+#pageNumber {
+    font-size: 1.4em;
+    color: #F5EEF8;
+}
+
+#loadStatus {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2vh;
+    color: #F5EEF8;
+}
+
+.end {
+    background-color: rgba(0,0,0,.7);
+    outline: 3px solid #4C90BE;
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    margin: 25px 0 0 0;
+    padding: 5px 0;
+}

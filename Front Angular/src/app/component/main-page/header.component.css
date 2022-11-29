@@ -1,0 +1,38 @@
+.row {
+    padding: 0 2.5vw;
+    text-align: center;
+    margin-top: 1.5vh;
+}
+
+@media (min-width: 422px){
+    .row {padding: 0 25px;
+    }
+}
+
+img {
+    width: 90%;
+    height: 27.5vw;
+    object-fit: cover;
+}
+
+.slide {
+    margin-bottom: 5%;
+}
+
+.logo {
+    max-width: 33%;
+    height: auto;
+    transition: all .5s;
+}
+
+@media (max-width: 992px){
+    .logo {max-width: 50%;
+        transition: all .5s;
+    } 
+}
+
+@media (max-width: 572px){
+    .logo {max-width: 75%;
+        transition: all .5s;
+    }
+}

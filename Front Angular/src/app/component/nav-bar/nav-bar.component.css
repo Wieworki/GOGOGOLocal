@@ -1,0 +1,104 @@
+nav {
+    background: linear-gradient(90deg, #180748 0%, #603896 100%);
+ }
+
+.navbar-brand {
+   margin-left: 20px;
+ }
+
+#searchButton {
+   display: inline;
+}
+
+ .ui-widget {
+   font-size: 1.2rem;
+   margin-left: 20px;
+   padding-top: 0px;
+}
+
+.ui-widget input {
+   position: relative;
+   top: 3.2px;
+   background-color: #F5EEF8;
+   border: 1px solid #5A348C;
+   border-radius: 6.5px 0 0 6.5px;
+   text-indent: 10px;
+   font-size: 1.3rem;
+   width: calc(250px + 10%);
+}
+
+@media (max-width: 768px) {
+   .ui-widget input {
+      width: 75%;
+   }
+}
+
+.ui-widget ::placeholder {
+   background-image: url("/assets/1200px-Search_Noun_project_15028.png");
+   background-position: right;
+   background-repeat: no-repeat;
+   background-size: 30px;
+}
+
+.btn {
+   background-color: #5A348C;
+   border-color: #47296D;
+   color: white;
+}
+
+.btn:hover {
+   background-color: #47296D;
+   border-color: #5A348C;
+}
+
+#searchButton {
+   font-size: .9em;
+   padding: 4px 8px;
+   border-radius: 0 6.5px 6.5px 0;
+}
+
+ #dropdownMenuButton1 {
+    background-color: #200960;
+    border-color: #180748; 
+ }
+
+ #dropdownMenuButton1:hover {
+    background-color: #180748;
+    border-color: #200960;
+ }
+
+ #dropdownMenuButton1:focus {
+    background-color: #180748;
+ }
+
+ #dropdownMenuButton1:target {
+    background-color: #200960;
+ }
+
+ .dropdown-menu {
+    background-color: #F5EEF8;
+ }
+
+ .dropwdon-item {
+    text-align: center;
+ }
+
+ .dropdown-item:hover {
+    background-color: #E8DEEB;
+    font-weight: bold;
+ }
+
+ .dropdown-item:focus {
+    color: #603896;
+ }
+ 
+ @media (max-width: 768px){
+   .dropdown {
+      padding-top: 5px;
+      text-align: end;
+   } 
+   .ui-widget {
+      padding-top: 0;
+      text-align: end;
+   }
+}
