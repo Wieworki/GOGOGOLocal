@@ -24,6 +24,13 @@ nav {
    border-radius: 6.5px 0 0 6.5px;
    text-indent: 10px;
    font-size: 1.3rem;
+   width: calc(250px + 10%);
+}
+
+@media (max-width: 768px) {
+   .ui-widget input {
+      width: 75%;
+   }
 }
 
 .ui-widget ::placeholder {
