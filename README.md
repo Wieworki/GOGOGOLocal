@@ -31,6 +31,7 @@ Cuenta con las siguientes propiedades:
 
 - ID
 - ID_tipo
+- ID_editorial
 - Nombre
 
 ### Tipo producto
