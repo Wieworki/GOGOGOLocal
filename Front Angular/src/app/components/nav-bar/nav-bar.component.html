@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top">
 
-    <div class="container-fluid">
+    <div class="container-fluid">s
 
         <a class="navbar-brand" href="#">
             <img src="/assets/gogogo manga y comics store - logo sin fondo 2.png" height="40" width="45">
@@ -17,10 +17,14 @@
                 <input id="tags" placeholder="Buscador">
                 <button id="searchButton" class="btn btn-black">Buscar</button>
             </div>
+
+            <a href="/login">
+                <button type="button" class="btn btn-dark" id="login" *ngIf="!isLogged">LOGIN</button> 
+            </a >
         
             <div class="dropdown">
 
-                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" *ngIf="isLogged">
                     <i class="bi bi-gear-fill"></i> Usuario
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">

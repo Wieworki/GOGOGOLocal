@@ -40,38 +40,35 @@ nav {
    background-size: 30px;
 }
 
-.btn {
+#searchButton {
+   font-size: .9em;
+   padding: 4px 8px;
+   border-radius: 0 6.5px 6.5px 0;
    background-color: #5A348C;
    border-color: #47296D;
    color: white;
 }
 
-.btn:hover {
+#searchButton:hover {
    background-color: #47296D;
    border-color: #5A348C;
 }
 
-#searchButton {
-   font-size: .9em;
-   padding: 4px 8px;
-   border-radius: 0 6.5px 6.5px 0;
-}
-
- #dropdownMenuButton1 {
+ #dropdownMenuButton1, #login {
     background-color: #200960;
     border-color: #180748; 
  }
 
- #dropdownMenuButton1:hover {
+ #dropdownMenuButton1:hover, #login {
     background-color: #180748;
     border-color: #200960;
  }
 
- #dropdownMenuButton1:focus {
+ #dropdownMenuButton1:focus, #login {
     background-color: #180748;
  }
 
- #dropdownMenuButton1:target {
+ #dropdownMenuButton1:target, #login {
     background-color: #200960;
  }
 

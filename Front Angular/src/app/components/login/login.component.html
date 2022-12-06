@@ -1,0 +1,32 @@
+<main class="container-fluid">
+
+    <body>
+
+        <header>
+            <div>
+            <h4>Iniciar Sesión</h4>
+            <h5>Introduzca sus datos para que podamos verificar su identidad.</h5>
+            </div>
+        </header>
+                
+        <form id ="loginForm" method="post" onsubmit="validateUser()">
+            
+                <div>
+                    <input placeholder="Usuario" type="text" id="UserName" required>
+                </div>
+
+                <div>
+                    <input placeholder="Contraseña" type="password" id="UserPass" required>
+               </div>
+
+            <div>
+                <button class="btn btn-primary" type ="submit">Ingresar</button>
+                <a class="btn btn-primary" href="" role="button">Volver</a>
+                <div id="errorPosition"><span id="errorMessage"></span></div>
+            </div>
+
+        </form>
+
+    </body>
+
+</main>
