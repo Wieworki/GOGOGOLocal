@@ -1,0 +1,47 @@
+body {
+    background-image: url("/assets/Gogogo feed completo.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: calc(65px + 1.5%) 25px 15px 25px;
+    min-height: 100vh;
+}
+
+@media (max-width: 311px){
+    body {padding-top: 100px;
+    } 
+}
+
+#container-fluid {
+    color: #F5EEF8;
+    box-shadow: 0px 0px 40px rgba(0,0,0,1);
+    background-color: rgba(0,0,0,.7);
+    outline: 9px double #4C90BE;
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    margin: 25px 0;
+}
+
+
+h4 {
+    font-weight: bold;
+    padding: calc(5px + 1%);
+    font-size: calc(1rem + 1.75vmax);
+}
+
+hr {
+    color: #F5EEF8;
+    opacity: 0.5;
+    margin: 0.2rem 0;
+}
+
+.portada {
+    max-width: 98%;
+    padding: calc(5px + 1%);
+    border-radius: 5%;
+}
+
+p {
+    font-size: calc(0.8rem + .8vmax);
+}

@@ -2,9 +2,9 @@
 
     <div class="container-fluid">
 
-        <a class="navbar-brand" href="#">
-            <img src="/assets/gogogo manga y comics store - logo sin fondo 2.png" height="40" width="45">
-            <img src="/assets/gogogo manga y comics store - logo sin fondo 3.png" width="150">
+        <a class="navbar-brand" href="">
+            <img src="/assets/gogogo manga y comics store - logo sin fondo 1.png">
+            
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,10 +17,16 @@
                 <input id="tags" placeholder="Buscador">
                 <button id="searchButton" class="btn btn-black">Buscar</button>
             </div>
+
+            <div class="login">
+                <a href="/login">
+                    <button type="button" class="btn btn-dark" *ngIf="!isLogged">LOGIN</button> 
+                </a >
+            </div>
         
             <div class="dropdown">
 
-                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" *ngIf="isLogged">
                     <i class="bi bi-gear-fill"></i> Usuario
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">

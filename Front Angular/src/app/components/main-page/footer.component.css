@@ -8,11 +8,12 @@
 
 p {
     margin-bottom: 0.5rem;
+    font-size: calc(.5rem + .75vmax);
 }
 
 h6 {
     letter-spacing: 1px;
-    font-size: 1.1rem;
+    font-size: calc(.55rem + .8125vmax);
 }
 
 .row>* {
@@ -26,8 +27,7 @@ a {
     color: #5A348C;
     padding: 4px 9px;
     border-radius: 100%;
-    font-size: 1.5rem;
-    margin: 5px;
+    font-size: calc(.8rem + 1vmax);
 }
 
 button {
@@ -56,4 +56,5 @@ input {
 
 .redes {
     display: inline-block;
+    margin: 7.5px 5px;
 }

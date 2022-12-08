@@ -4,7 +4,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 65px 25px 15px 25px;
+    padding: calc(65px + 1.5%) 25px 15px 25px;
     min-height: 100vh;
 }
 
@@ -39,7 +39,14 @@ tbody tr {
     color: #F5EEF8;
     text-align: center; 
     border: 2px solid #45b39d;
-    font-size: 1.2rem;
+    font-weight: bold;
+    font-size: calc(0.6rem + 1vmax);
+}
+
+@media (max-width: 576px){
+    tbody tr {
+        font-size: calc(1.2rem + 0.4vmax);
+    }
 }
 
 table tbody tr:nth-of-type(even) {
@@ -52,20 +59,27 @@ table tbody tr:nth-of-type(even) {
 
 span {
     color: #F5EEF8;
+    font-size: calc(.5rem + .5vmax);
 }
 
 .top {
-    font-size: 1.2rem;
-    margin: 1.75vh .3vw;
-    padding: 0.2rem 0.8rem;
+    margin: 12px;
     position: fixed;
     right: 25px;
-    bottom: -75px;
+    bottom: -10vh;
     transition: all .2s ease-in-out;
 }
 
+i {
+    font-size: calc(.6rem + .6vmax);
+}
+
+a {
+    border-radius: 50%;
+}
+
 .showTop {
-    bottom: -4px;
+    bottom: 0px;
     transition: all .2s ease-in-out;
 }
 
@@ -83,7 +97,7 @@ span {
 #previousPageButton,
 #nextPageButton {
     margin: 1.75vh .7vw;
-    font-size: 1.3rem;
+    font-size: calc(.5rem + 1vmax);
 }
 
 #pageNumber {
