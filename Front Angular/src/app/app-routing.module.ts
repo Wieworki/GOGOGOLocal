@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { ProductPageComponent } from './components/product-page/product-page.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path:'login', component: LoginComponent},
+ {path:'desc', component: ProductPageComponent} /* this line lacks the "/:id" after "desc" in the direction path*/
 ];
 
 @NgModule({

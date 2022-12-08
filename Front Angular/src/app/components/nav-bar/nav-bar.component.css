@@ -6,9 +6,10 @@ nav {
    margin-left: 20px;
  }
 
-#searchButton {
-   display: inline;
-}
+ img {
+   width: 12.5vmax;
+   min-width: 200px;
+ }
 
  .ui-widget {
    font-size: 1.2rem;
@@ -17,13 +18,15 @@ nav {
 }
 
 .ui-widget input {
-   position: relative;
-   top: 3.2px;
+   position: sticky;
+   top: 2%;
+   padding: 4px 8px;
+   margin: calc(2.5px + 0.2%) 0;
    background-color: #F5EEF8;
    border: 1px solid #5A348C;
    border-radius: 6.5px 0 0 6.5px;
-   text-indent: 10px;
-   font-size: 1.3rem;
+   text-indent: calc(.5rem + 1.75vw);
+   font-size: calc(.6rem + .8vmax);
    width: calc(250px + 10%);
 }
 
@@ -41,12 +44,17 @@ nav {
 }
 
 #searchButton {
-   font-size: .9em;
+   position: sticky;
+   top: 2%;
+   vertical-align: top;
+   margin: calc(2.5px + 0.2%) 0;
+   font-size: calc(.6rem + .8vmax);
    padding: 4px 8px;
    border-radius: 0 6.5px 6.5px 0;
    background-color: #5A348C;
    border-color: #47296D;
    color: white;
+   display: inline;
 }
 
 #searchButton:hover {
@@ -54,21 +62,23 @@ nav {
    border-color: #5A348C;
 }
 
- #dropdownMenuButton1, #login {
+.btn-dark {
     background-color: #200960;
     border-color: #180748; 
- }
+    font-size: calc(.6rem + .75vmax);
+    color: #F5EEF8;
+}
 
- #dropdownMenuButton1:hover, #login {
+.btn-dark:hover {
     background-color: #180748;
     border-color: #200960;
- }
+}
 
- #dropdownMenuButton1:focus, #login {
+.btn-dark:focus {
     background-color: #180748;
- }
+}
 
- #dropdownMenuButton1:target, #login {
+.btn-dark:target {
     background-color: #200960;
  }
 
@@ -90,12 +100,13 @@ nav {
  }
  
  @media (max-width: 768px){
-   .dropdown {
+   .dropdown, .login {
       padding-top: 5px;
       text-align: end;
+      margin-right: calc(15vw - 8% - 15px);
    } 
    .ui-widget {
       padding-top: 0;
-      text-align: end;
+      text-align: center;
    }
 }
