@@ -6,8 +6,10 @@ export class Producto {
     id_tipo: TipoProducto['id'];
     id_editorial: Editorial['id'];
     nombre: string;
+    descripcion: string;
 
-    constructor(nombre:string) {
+    constructor(nombre:string, descripcion:string) {
         this.nombre = nombre;
+        this.descripcion = descripcion;
     }
 }
