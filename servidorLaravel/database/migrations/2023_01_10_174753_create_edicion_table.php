@@ -13,16 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('genero_producto', function (Blueprint $table) {
+        Schema::create('edicion', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('id_producto');
-            $table->unsignedBigInteger('id_genero');
+            $table->string('nombre');
+            $table->date('fecha');
+            $table->unsignedBigInteger('id_evento');
             $table->timestamps();
 
-            $table->foreign('id_producto')
-               ->references('id')->on('producto')->onDelete('cascade');
-            $table->foreign('id_genero')
-               ->references('id')->on('genero')->onDelete('cascade');
+            $table->foreign('id_evento')
+               ->references('id')->on('evento')->onDelete('cascade');
         });
     }
 
@@ -33,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('genero_producto');
+        Schema::dropIfExists('edicion');
     }
 };

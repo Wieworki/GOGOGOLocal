@@ -15,10 +15,13 @@ return new class extends Migration
     {
         Schema::create('volumen', function (Blueprint $table) {
             $table->id();
-            $table->integer('id_producto');
+            $table->unsignedBigInteger('id_producto');
             $table->string('nombre');
             $table->integer('cantidad');
             $table->timestamps();
+
+            $table->foreign('id_producto')
+               ->references('id')->on('producto')->onDelete('cascade');
         });
     }
 

@@ -15,10 +15,15 @@ return new class extends Migration
     {
         Schema::create('producto', function (Blueprint $table) {
             $table->id();
-            $table->integer('id_tipo');
-            $table->integer('id_editorial');
+            $table->unsignedBigInteger('id_tipo');
+            $table->unsignedBigInteger('id_editorial');
             $table->string('nombre');
             $table->timestamps();
+
+            $table->foreign('id_tipo')
+               ->references('id')->on('tipo_producto')->onDelete('cascade');
+            $table->foreign('id_editorial')
+               ->references('id')->on('editorial')->onDelete('cascade');
         });
     }
 
