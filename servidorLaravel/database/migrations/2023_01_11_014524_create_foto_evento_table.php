@@ -18,6 +18,7 @@ return new class extends Migration
             $table->unsignedBigInteger('id_edicion');
             $table->string('nombre');
             $table->string('ruta');
+            $table->binary('imagen');
             $table->timestamps();
 
             $table->foreign('id_edicion')

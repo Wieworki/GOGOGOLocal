@@ -15,6 +15,7 @@ class Foto_evento extends Model
         'id',
         'nombre',
         'ruta',
-        'id_edicion'
+        'id_edicion',
+        'imagen'
     ];
 }

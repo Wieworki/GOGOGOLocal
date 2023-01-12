@@ -10,6 +10,9 @@ use App\Http\Controllers\API\GeneroController;
 use App\Http\Controllers\API\TipoProductoController;
 use App\Http\Controllers\API\NoticiaController;
 use App\Http\Controllers\API\ProductoController;
+use App\Http\Controllers\API\VolumenController;
+use App\Http\Controllers\API\GeneroProductoController;
+use App\Http\Controllers\API\FotoEventoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,3 +46,9 @@ Route::apiResource('/tipoproducto', TipoProductoController::class)->middleware('
 Route::apiResource('/noticia', NoticiaController::class)->middleware('auth:api');
 
 Route::apiResource('/producto', ProductoController::class)->middleware('auth:api');
+
+Route::apiResource('/volumen', VolumenController::class)->middleware('auth:api');
+
+Route::apiResource('/generoproducto', GeneroProductoController::class)->middleware('auth:api');
+
+Route::apiResource('/fotoevento', FotoEventoController::class)->middleware('auth:api');

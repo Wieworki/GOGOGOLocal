@@ -15,7 +15,8 @@ class Foto_noticia extends Model
         'id',
         'nombre',
         'ruta',
-        'id_noticia'
+        'id_noticia',
+        'imagen'
     ];
 
     
